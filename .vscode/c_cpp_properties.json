@@ -1,0 +1,39 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}\\arduino_data\\packages\\arduino\\hardware\\sam\\1.6.12\\cores\\arduino\\**",
+                "${workspaceFolder}\\arduino_data\\packages\\arduino\\hardware\\sam\\1.6.12\\variants\\arduino_due_x\\**",
+                "${workspaceFolder}\\arduino_data\\packages\\arduino\\hardware\\sam\\1.6.12\\libraries\\Wire\\src",
+                "${workspaceFolder}\\arduino_data\\packages\\arduino\\hardware\\sam\\1.6.12\\system\\libsam",
+                "${workspaceFolder}\\arduino_data\\packages\\arduino\\hardware\\sam\\1.6.12\\system\\CMSIS\\CMSIS\\Include",
+                "${workspaceFolder}\\arduino_data\\packages\\arduino\\hardware\\sam\\1.6.12\\system\\CMSIS\\Device\\ATMEL",
+                "${workspaceFolder}\\arduino_data\\packages\\arduino\\tools\\arm-none-eabi-gcc\\4.8.3-2014q1\\arm-none-eabi\\include",
+                "${workspaceFolder}\\arduino_data\\packages\\arduino\\tools\\arm-none-eabi-gcc\\4.8.3-2014q1\\lib\\gcc\\arm-none-eabi\\4.8.3\\include",
+                "${workspaceFolder}\\libraries\\**",
+                "${workspaceFolder}\\src\\**"
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}\\arduino_data\\packages\\arduino\\hardware\\sam\\1.6.12\\cores\\arduino\\**",
+                    "${workspaceFolder}\\arduino_data\\packages\\arduino\\hardware\\sam\\1.6.12\\variants\\arduino_due_x\\**",
+                    "${workspaceFolder}\\arduino_data\\packages\\arduino\\hardware\\sam\\1.6.12\\libraries\\Wire\\src",
+                    "${workspaceFolder}\\arduino_data\\packages\\arduino\\hardware\\sam\\1.6.12\\system\\libsam",
+                    "${workspaceFolder}\\arduino_data\\packages\\arduino\\hardware\\sam\\1.6.12\\system\\CMSIS\\CMSIS\\Include",
+                    "${workspaceFolder}\\arduino_data\\packages\\arduino\\hardware\\sam\\1.6.12\\system\\CMSIS\\Device\\ATMEL",
+                    "${workspaceFolder}\\arduino_data\\packages\\arduino\\tools\\arm-none-eabi-gcc\\4.8.3-2014q1\\arm-none-eabi\\include",
+                    "${workspaceFolder}\\arduino_data\\packages\\arduino\\tools\\arm-none-eabi-gcc\\4.8.3-2014q1\\lib\\gcc\\arm-none-eabi\\4.8.3\\include",
+                    "${workspaceFolder}\\libraries\\**",
+                    "${workspaceFolder}\\src\\**"
+                ]
+            },
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x86",
+            "compilerPath": "${workspaceFolder}\\arduino_data\\packages\\arduino\\tools\\arm-none-eabi-gcc\\4.8.3-2014q1\\bin\\arm-none-eabi-gcc.exe",
+            "defines": []
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.nc": "gcode",
+        "*.cps": "javascript",
+        "cstdint": "cpp"
+    }
+}

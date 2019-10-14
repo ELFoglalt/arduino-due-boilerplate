@@ -1,0 +1,90 @@
+{
+    "_runner": "terminal",
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "install",
+            "type": "shell",
+            "command": "$(cygpath -m '${workspaceFolder}')/scripts/install.sh",
+            "problemMatcher": []
+        },
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "arduino-cli",
+            "args": [
+                "compile",
+                "-v",
+                "--build-path",
+                "\"$(cygpath -m '${workspaceFolder}')/build\"",
+                "--build-cache-path",
+                "\"$(cygpath -m '${workspaceFolder}')/cache\"",
+                "-o",
+                "\"$(cygpath -m '${workspaceFolder}')/dist/${workspaceFolderBasename}.hex\"",
+                "--fqbn",
+                "arduino:sam:arduino_due_x_dbg"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            },
+            "group": "build"
+        },
+        {
+            "label": "upload",
+            "type": "shell",
+            "command": "arduino-cli",
+            "args": [
+                "upload",
+                "-p",
+                "\"$(python $PWD/scripts/find_port.py arduino:sam:arduino_due_x_dbg)\"",
+                "-i",
+                "\"$(cygpath -m '${workspaceFolder}')/dist/${workspaceFolderBasename}.hex\"",
+                "--fqbn",
+                "arduino:sam:arduino_due_x_dbg"
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            },
+            "group": "build"
+        },
+        {
+            "label": "build-and-upload",
+            "dependsOn": [
+                "build",
+                "upload"
+            ],
+            "dependsOrder": "sequence",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            },
+        }
+    ],
+}
