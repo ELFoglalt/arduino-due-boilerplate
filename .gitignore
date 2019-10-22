@@ -2,6 +2,5 @@ dist
 arduino_data/packages
 arduino_data/staging
 arduino_data/tmp
-build
 cache
 dist

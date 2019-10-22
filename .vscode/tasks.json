@@ -18,8 +18,6 @@
                 "compile",
                 "-v",
                 "--build-path",
-                "\"$(cygpath -m '${workspaceFolder}')/build\"",
-                "--build-cache-path",
                 "\"$(cygpath -m '${workspaceFolder}')/cache\"",
                 "-o",
                 "\"$(cygpath -m '${workspaceFolder}')/dist/${workspaceFolderBasename}.hex\"",
