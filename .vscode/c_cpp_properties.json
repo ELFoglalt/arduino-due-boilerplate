@@ -32,7 +32,7 @@
             "cppStandard": "c++17",
             "intelliSenseMode": "gcc-x86",
             "compilerPath": "${workspaceFolder}\\arduino_data\\packages\\arduino\\tools\\arm-none-eabi-gcc\\4.8.3-2014q1\\bin\\arm-none-eabi-gcc.exe",
-            "defines": []
+            "defines": ["__SAM3X8E__"]
         }
     ],
     "version": 4
